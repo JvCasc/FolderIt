@@ -40,6 +40,5 @@ O script identifica o arquivo e o envia para a pasta correspondente:
 | :--- | :--- |
 | **Imagens** | .jpg, .jpeg, .png, .gif |
 | **Documentos** | .pdf, .docx, .txt, .xlsx |
-| **Compactados** | .zip, .rar, .7z |
+| **Compactados** | .zip, .rar |
 | **Executáveis** | .exe, .msi |
-| **Projetos** | .py, .asc (LTspice), .raw

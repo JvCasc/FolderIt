@@ -18,6 +18,8 @@ destinos = {
     "mp4": home / "Pictures" / "Midias",
     "mov": home / "Pictures" / "Midias",
     "webp": home / "Pictures" / "Midias",
+    "gif": home / "Pictures" / "Midias",
+
 
     "exe": home / "Downloads" / "Instaladores",
     "msi": home / "Downloads" / "Instaladores",
