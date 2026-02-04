@@ -1,6 +1,6 @@
 # 📂 FolderIt
 
-O **FolderIt** é um script de automação em Python desenvolvido para acabar com a bagunça eterna da pasta de Downloads. Ele monitora a pasta em tempo real e move cada arquivo para o lugar certo.
+O **FolderIt** é um script de automação em Python para acabar com a bagunça da pasta de Downloads. Ele monitora a pasta em tempo real e move cada arquivo que for instalado para o lugar certo.
 
 ## ✨ Funcionalidades
 
