@@ -25,6 +25,18 @@ class MeuHandler(FileSystemEventHandler):
                 else:
                     print("Download Falhou")
 
+    # Função "on_created" para monitorar os arquivos que forem movidos para a pasta de downloads ou forem baixados 
+    def on_created(self, event):
+        if not event.is_directory:
+            if not event.src_path.endswith(('.crdownload', '.part', '.tmp')):
+                if aguardar_conclusao(event.src_path):
+                    arquivo = Path(event.src_path).name
+                    categoria_arquivo, tipo_arquivo = filetype(arquivo)
+                    moveFiles(event.src_path, tipo_arquivo)
+                    print(f"O arquivo {event.src_path} foi instalado e movido.")
+                else:
+                    print("Download Falhou")
+
 
 path = Path.home() / "Downloads"
 event_handler = MeuHandler()
